@@ -20,7 +20,7 @@ npm run demo  # runs a scripted end-to-end walkthrough of the system
 \`\`\`
 
 No external testing framework is used — tests run on Node's built-in `node:test` runner
-via `tsx`, so there's zero test-framework dependency footprint.
+via `tsx`. 
 
 ## Project structure
 
@@ -78,7 +78,7 @@ JavaScript is single-threaded and there's no `await`/yield point between the che
 act. Worth calling out explicitly, since the same code ported naively to a multi-threaded
 language wouldn't have this guarantee for free.
 
-## What I'd add next
+## Future Design Considerations 
 
 - **Pricing** — a `dailyRate` on `CarType` would slot in without restructuring anything
 - **Persistence** — the `Car`-owns-`Reservation`s model maps directly onto a relational
